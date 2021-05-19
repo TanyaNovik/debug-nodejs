@@ -4,7 +4,8 @@
   "main": "app.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "lint": "eslint --ext .js --fix controllers/ middleware/ models/ ./"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -12,10 +13,13 @@
     "express": "^4.16.4",
     "jsonwebtoken": "^8.3.0",
     "pg": "^7.6.0",
-    "sequelize": "^4.41.0"
+    "sequelize": "^4.41.0",
+    "dotenv": "^8.2.0"
   },
   "devDependencies": {
-    "dotenv": "^8.2.0",
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.2",
     "nodemon": "^1.18.5"
   }
 }
